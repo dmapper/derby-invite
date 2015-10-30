@@ -1,7 +1,7 @@
 # Derby-Invite
 
 ## Installation
-TBD
+npm install derby-invite
 ### Setting
 #### Step 1. Require
 ```javascript
