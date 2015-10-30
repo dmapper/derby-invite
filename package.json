@@ -1,0 +1,21 @@
+{
+  "name": "derby-invite",
+  "version": "0.1.0",
+  "description": "Derby module providing ability to invite other users and see statistics",
+  "main": "lib",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "extend": "^3.0.0",
+    "superagent": "^1.4.0"
+  },
+  "peerDependencies": {
+    "derby": "*",
+    "derby-login": "*",
+    "express": "*"
+  },
+  "keywords": ["derby", "invite", "invites"],
+  "author": "Denis Ivanchenko",
+  "license": "MIT"
+}

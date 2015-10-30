@@ -1,0 +1,8 @@
+<index:>
+
+  <form role="form" on-submit="submit()" class="InviteForm">
+    <p class="InviteForm-error">{{error}}</p>
+    <p class="InviteForm-message">{{message}}</p>
+    <input type='email' class="InviteForm-email" placeholder="{{emailText || 'Email'}}" value="{{email}}" autofocus=true />
+    <input type="submit" class="InviteForm-submit" value="{{text || 'Send'}}" disabled="{{sending}}" />
+  </form>
