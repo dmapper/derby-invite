@@ -1,6 +1,6 @@
 {
   "name": "derby-invite",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Derby module providing ability to invite other users and see statistics",
   "main": "lib",
   "scripts": {
