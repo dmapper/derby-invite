@@ -1,21 +1,8 @@
 var extend = require('extend');
+var InviteForm = require('./InviteForm');
+var Results = require('./Results');
+
 module.exports = function(app, options) {
-  options = extend(true, {
-    webpack: false
-  }, options);
-
-  var components = [
-    require('./InviteForm'),
-    require('./Results')
-  ];
-
-  if (options.webpack) {
-    components = components.map(function (elem) {
-      elem.prototype.view = require(elem.prototype.view);
-    });
-  }
-
-  for (var i = 0, l = components.length; i < l; i++) {
-    app.component(components[i]);
-  }
+  app.component(InviteForm);
+  app.component(Results);
 };
