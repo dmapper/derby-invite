@@ -1,0 +1,13 @@
+index:
+  table
+    thead
+      tr
+        th Name
+        th Total
+        th Success
+    tbody
+      {{each list as #item}}
+        tr
+          td {{#item.name}}
+          td {{#item.total}}
+          td {{#item.success}}
