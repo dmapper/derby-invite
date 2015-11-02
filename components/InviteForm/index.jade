@@ -1,0 +1,6 @@
+index:
+  form.InviteForm(role='form', on-submit='submit()')
+    p.InviteForm-error {{error}}
+    p.InviteForm-message {{message}}
+    input.InviteForm-email(type='email', placeholder="{{emailText || 'Email'}}", value='{{email}}', autofocus='true')
+    input.InviteForm-submit(type='submit', value="{{text || 'Send'}}", disabled='{{sending}}')
