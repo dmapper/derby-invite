@@ -4,7 +4,7 @@ function Results() {}
 Results.prototype = _.clone(require('../base').prototype);
 
 Results.prototype.name = 'invite:results';
-Results.prototype.view = __dirname + '/index.html';
+Results.prototype.view = require('./index.jade');
 
 Results.prototype.init = function () {
   var self = this;

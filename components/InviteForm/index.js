@@ -4,7 +4,7 @@ function InviteForm() {}
 InviteForm.prototype = _.clone(require('../base').prototype);
 
 InviteForm.prototype.name = 'invite:form';
-InviteForm.prototype.view = __dirname + '/index.html';
+InviteForm.prototype.view = require('./index.jade');
 
 InviteForm.prototype.submit = function () {
   var self = this;
