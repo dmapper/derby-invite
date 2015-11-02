@@ -14,7 +14,7 @@ var options = {};
 
 #### Step 3. Middleware
 ```javascript
-  .use(derbyInvite.middleware(store, options))
+  .use(derbyInvite.middleware(options))
 ```
 
 ## MIT Licence
