@@ -1,9 +1,10 @@
+_ = require('lodash');
 module.exports = Results;
 function Results() {}
-Results.prototype = require('../base').prototype;
+Results.prototype = _.clone(require('../base').prototype);
 
 Results.prototype.name = 'invite:results';
-Results.prototype.view = __dirname;
+Results.prototype.view = __dirname + '/index.html';
 
 Results.prototype.init = function () {
   var self = this;

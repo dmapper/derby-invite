@@ -1,9 +1,10 @@
+_ = require('lodash');
 module.exports = InviteForm;
 function InviteForm() {}
-InviteForm.prototype = require('../base').prototype;
+InviteForm.prototype = _.clone(require('../base').prototype);
 
 InviteForm.prototype.name = 'invite:form';
-InviteForm.prototype.view = __dirname;
+InviteForm.prototype.view = __dirname + '/index.html';
 
 InviteForm.prototype.submit = function () {
   var self = this;
